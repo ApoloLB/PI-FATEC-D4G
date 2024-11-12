@@ -85,7 +85,7 @@ a{
     background-image: linear-gradient(to right, rgb(52, 1, 87), rgb(81, 0, 135), rgb(81, 0, 135), rgb(52, 1, 87));
 }
 
-.fatectxt{
+.fatecimg {
     display: flex;
     justify-content: center;
     color: white;
@@ -94,7 +94,7 @@ a{
 
 .fatecimg img {
     margin: 50px;
-    border: 3px solid #fff;
+    border: 5px solid #fff;
     border-radius: 10px;
     float: left;
 }
