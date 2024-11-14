@@ -10,13 +10,12 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    
 }
 
 a {
     text-decoration: none;
-    color: white;
+    
 }
 
 
@@ -39,6 +38,9 @@ header {
     display: inline-block;
     font-size: 30px;
     padding: 20px;
+}
+.nav li a{
+    color: #fff;
 }
 
 .nav li a:hover {
@@ -91,9 +93,22 @@ header {
 /*estilo fatec*/
 .fatec {
     background-image: linear-gradient(to right, rgb(1, 28, 87), rgb(0, 126, 135), rgb(0, 126, 135), rgb(1, 28, 87));
+    
+}
+.fatConjunto{
+
+    display: flex; /* Flexbox para alinhar as divs */
+    justify-content: space-between; /* Espaçamento entre as divs */
+    align-items: flex-start;
+
 }
 
-.fatecimg {
+.fatDireita{
+    display: inline-block;
+    
+}
+
+.fatectxt {
     display: flex;
     justify-content: center;
     color: white;
@@ -101,50 +116,57 @@ header {
     clear: left;
     text-align: justify;
     margin-bottom: 20px;
+    width: 900px;
 }
 
 
 .imgfat  {
-    display: block;
-    border: 5px solid #fff;
-    border-radius: 10px;
+    display: inline-block;
     justify-items: center;
     margin-bottom: 10px;
-    width: 800px;
+    width:800px;
 
 }
 
 .imgfat img{
     width: 100%;
-    margin: 0;
+    border: 5px solid #fff;
+    border-radius: 10px;
 
 }
 
 
-.caixa {
-    background-color: #fff;
+
+.caixa{
+    background-color: rgb(0, 0, 0);
     width: 250px;
-    height: 40px;
-    border-radius: 18px;
+    padding: 4px;
     text-align: center;
-    display: flex;
-    
+    font-size: 25px;
+    border-radius: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #000;
+    margin-top: 10px;
 }
 .caixa a{
-    
-    color: #000;
-    font-size: 18px;
     margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    
 }
 
 .caixa:hover{
-    background-color: #0042ab;
-    transform: scale(1.05);
-    transition-duration: 100ms;
-    background-color: #0042ab;
-    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s;
+    
     color: #fff;
 }
+
+
+
+
 
 
 /*estilo curso*/
@@ -157,7 +179,7 @@ header {
     justify-content: center;
     color: white;
     font-size: 25px;
-    text-align: center;
+    text-align: justify;
 }
 
 /*estilo carreira*/
@@ -170,7 +192,7 @@ header {
     justify-content: center;
     color: white;
     font-size: 25px;
-    text-align: center;
+    text-align: ju;
 }
 /*estilo disciplinas*/
 .disciplinas {
