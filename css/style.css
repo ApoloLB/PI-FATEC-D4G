@@ -28,11 +28,6 @@ header {
     z-index: 1;
 }
 
-a {
-    text-decoration: none;
-    color: #fff;
-}
-
 .nav {
     background-color: black;
     list-style-type: none;
@@ -50,7 +45,7 @@ a {
     transform: scale(1.2);
     transition-duration: 100ms;
     color: #0042ab;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .home,
@@ -95,17 +90,19 @@ a {
 
 /*estilo fatec*/
 .fatec {
-    background-image: linear-gradient(to right, rgb(52, 1, 87), rgb(81, 0, 135), rgb(81, 0, 135), rgb(52, 1, 87));
+    background-image: linear-gradient(to right, rgb(1, 28, 87), rgb(0, 126, 135), rgb(0, 126, 135), rgb(1, 28, 87));
 }
 
 .fatecimg {
     display: flex;
     justify-content: center;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
+    text-align: center;
 }
 
 .fatecimg img {
+    display: block;
     margin: 50px;
     border: 5px solid #fff;
     border-radius: 10px;
@@ -122,40 +119,41 @@ a {
 .caixa:hover {
     transform: scale(1.2);
     transition-duration: 100ms;
-    color: rgb(0, 204, 255);
+    color: #0042ab;
     cursor: pointer;
 }
 
-.caixa a:hover {
-    transform: scale(1.2);
-    transition-duration: 100ms;
-    color: rgb(0, 204, 255);
-    cursor: pointer;
-}
+
 
 /*estilo curso*/
 .curso {
     background-image: linear-gradient(to right, rgb(52, 1, 87), rgb(81, 0, 135), rgb(81, 0, 135), rgb(52, 1, 87));
 }
 
+.dsm {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
 /*estilo carreira*/
 .carreiras {
     background-image: linear-gradient(to right, rgb(52, 1, 87), rgb(81, 0, 135), rgb(81, 0, 135), rgb(52, 1, 87));
-
 }
 
+.mercado {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
 /*estilo disciplinas*/
 .disciplinas {
     background-image: linear-gradient(to right, #000, #111, #111, #000);
     height: 100%;
-
-}
-
-.disciplinas h1 {
-    color: #fff;
-    text-align: center;
-    font-size: 50px;
-    margin-bottom: 50px;
 }
 
 /* começo flip card */
@@ -214,7 +212,7 @@ a {
 }
 
 .card h2 {
-    font-size: 30px;
+    font-size: 22px;
     margin: 0;
     padding: 20px;
     text-align: center;
