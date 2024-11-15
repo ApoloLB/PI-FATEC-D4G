@@ -10,8 +10,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background: url(https://www.bain.com/globalassets/editorial-disruptors/2024/tech-report-2024/tech-report-hero-1950x650-v2.jpg);
-
+    background: linear-gradient(to bottom,rgb(1, 28, 87), rgb(0, 126, 135), rgb(0, 126, 135),rgb(1, 28, 87));
 }
 
 a {
@@ -31,6 +30,9 @@ header {
     list-style-type: none;
     text-align: center;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
 }
 
 .nav li {
@@ -49,14 +51,37 @@ header {
     color: #0042ab;
     text-decoration: none;
 }
+.dsmnav, .fatecnav{
+    height: 50px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    
+}
+
+.dsmnav{
+    float: left;
+}
+
+.fatecnav{
+    float:right;
+}
 
 .container {
     width: 80%;
     margin: auto;
 }
-
-
-.hometxt {}
+.homecontainer{
+    width: 80%;
+    margin: auto;
+}
+.chart{
+    float: left;
+    width: 2000px;
+    height: auto;
+    margin: -60px -50px 0px -50px;
+}
 
 .hometxt h1,
 .hometxt h2 {
@@ -89,7 +114,12 @@ header {
 .disciplinas,
 .alunos {
     padding: 50px;
-    height: 100%;
+    height: auto;
+}
+.home {
+    background-image: linear-gradient(to right, #000, #222, #222, #000);
+    padding-top: 130px;
+    overflow: hidden;
 }
 
 .fatec,
@@ -117,15 +147,10 @@ header {
 }
 
 /*estilo home*/
-.home {
-    background-image: linear-gradient(to right, #000, #111, #111, #000);
-    padding-top: 130px;
-    overflow: hidden;
-}
 
 /*estilo fatec*/
 .fatec {
-    background-image: linear-gradient(to right, rgb(1, 28, 87), rgb(0, 126, 135), rgb(0, 126, 135), rgb(1, 28, 87));
+    /* background-image: linear-gradient(to right, rgb(1, 28, 87), rgb(0, 126, 135), rgb(0, 126, 135), rgb(1, 28, 87)); */
 
 }
 
@@ -163,14 +188,12 @@ header {
     margin-bottom: 10px;
     width: 800px;
     align-items: center;
-
 }
 
 .imgfat img {
     width: 100%;
     border: 5px solid #fff;
     border-radius: 10px;
-
 }
 
 .caixa {
@@ -202,7 +225,7 @@ header {
 
 /*estilo curso*/
 .curso {
-    background-image: linear-gradient(to right, rgb(52, 1, 87), rgb(81, 0, 135), rgb(81, 0, 135), rgb(52, 1, 87));
+    /* background-image: linear-gradient(to right, rgb(52, 1, 87), rgb(81, 0, 135), rgb(81, 0, 135), rgb(52, 1, 87)); */
 }
 
 
@@ -210,10 +233,8 @@ header {
     width: 400px;
     height: auto;
     float: right;
-    margin-right: 10px;
     shape-outside: circle();
-    border-radius: 50%;
-
+    /* margin-left: 25px; */
 }
 
 .dsmtxt {
@@ -226,7 +247,7 @@ header {
 
 /*estilo carreira*/
 .carreiras {
-    background-image: linear-gradient(to right, rgb(52, 1, 87), rgb(81, 0, 135), rgb(81, 0, 135), rgb(52, 1, 87));
+    /* background-image: linear-gradient(to right, rgb(52, 1, 87), rgb(81, 0, 135), rgb(81, 0, 135), rgb(52, 1, 87)); */
 }
 
 .mercado {
@@ -239,7 +260,7 @@ header {
 
 /*estilo disciplinas*/
 .disciplinas {
-    background-image: linear-gradient(to right, #000, #111, #111, #000);
+    /* background-image: linear-gradient(to right, #000, #111, #111, #000); */
     height: 100%;
 }
 
@@ -314,7 +335,7 @@ header {
 
 /*estilo alunos*/
 .alunos {
-    background-image: linear-gradient(to right, rgb(1, 34, 87), #0042ab, #0042ab, rgb(1, 34, 87));
+    /* background-image: linear-gradient(to right, rgb(1, 34, 87), #0042ab, #0042ab, rgb(1, 34, 87)); */
     padding: 50px;
 }
 
@@ -453,4 +474,138 @@ header {
         width: 100%;
         max-width: 200px;
     }
+}
+/* estilo Integrantes */
+.integrantes {
+    background: linear-gradient(to top, #0042ab, #1a1a1a);  
+    color: white;
+    padding: 30px 0; 
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.integrantes-container {
+    width: 90%;
+    max-width: 1000px; 
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo {
+    margin-bottom: 20px; 
+}
+
+.dsm-logo {
+    width: 120px; 
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.dsm-logo:hover {
+    transform: scale(1.1); 
+}
+
+.team-members h3 {
+    font-size: 24px;  
+    color: #fff;
+    margin-bottom: 20px; 
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;  
+}
+
+.member {
+    flex: 1;
+    margin: 0 15px; 
+    text-align: center;
+}
+
+.member-img {
+    width: 130px;  
+    height: 130px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-bottom: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    border: 4px solid #0042ab; 
+    transition: transform 0.3s; 
+}
+
+.member-img:hover {
+    transform: scale(1.05); 
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;  
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    font-size: 24px; 
+    color: #fff;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+    color: #4a2bf6; 
+    transform: scale(1.1);
+}
+
+.member p {
+    font-size: 14px;  
+    color: #fff;
+    margin-top: 8px;  
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member {
+        margin-bottom: 30px; 
+    }
+    .logos {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Estilos Footer */
+.footer {
+    background: #003366; 
+    color: white;
+    padding: 40px 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    width: auto;
+    height: 120px;
+    transition: transform 0.3s;
+}
+
+.footer-copy {
+    font-size: 14px;
+    color: #aaa;
+    margin-top: 20px;
 }
