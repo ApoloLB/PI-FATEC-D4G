@@ -14,11 +14,10 @@ body {
 
 a {
     text-decoration: none;
+    color: #fff;
 }
 
-
 /* tentativa de responsividade */
-
 @media (min-width: 1200px) {
     .card_container {
         grid-template-columns: repeat(3, 1fr);
@@ -110,7 +109,7 @@ header {
     background-color: rgb(0, 0, 0);
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
 }
 
 .nav {
@@ -121,12 +120,15 @@ header {
     display: flex;
     justify-content: space-between;
     overflow: hidden;
+    
 }
 
 .nav li {
     display: inline-block;
-    font-size: 30px;
-    padding: 20px;
+    font-size: 25px;
+    padding: 15px;
+    padding-top: 15px;
+
 }
 
 .nav li a {
@@ -146,7 +148,7 @@ header {
     width: auto;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin: 10px 20px 10px 20px;
 }
 
 .dsmnav {
@@ -171,7 +173,7 @@ header {
     float: left;
     width: 2000px;
     height: auto;
-    margin: -60px -50px 0px -50px;
+    margin: -50px -50px 0px -50px;
 }
 
 .hometxt h1,
@@ -217,7 +219,8 @@ header {
 .fatec,
 .disciplinas,
 .alunos,
-.curso {
+.curso,
+.carreiras {
     border: 10px solid;
     border-image-slice: 1;
     border-width: 5px;
@@ -244,66 +247,33 @@ header {
 
 /*estilo fatec*/
 
-.fatec {
-    /* background-image: linear-gradient(to right, rgb(1, 28, 87), rgb(0, 126, 135), rgb(0, 126, 135), rgb(1, 28, 87)); */
-}
-
-.fatConjunto {
-    display: flex;
-    /* Flexbox para alinhar as divs */
-    justify-content: space-between;
-    /* Espaçamento entre as divs */
-    align-items: flex-start;
-}
-
-.fatDireita {
-    display: inline-block;
-}
-
 .fatectxt {
-    display: flex;
-    justify-content: center;
+    margin-left: 20px;
     color: white;
     font-size: 25px;
-    clear: left;
     text-align: justify;
-    margin-bottom: 20px;
-    width: 900px;
-    margin-left: 20px;
+    clear: both;
+    overflow: hidden;
 }
 
-.imgfat {
-    display: inline-block;
-    justify-items: center;
-    margin-bottom: 10px;
-    width: 800px;
-    align-items: center;
-}
-
-.imgfat img {
-    width: 100%;
+.fatecimg {
+    float: left;
+    width: 600px;
+    height: auto;
+    margin-right: 50px;
     border: 5px solid #fff;
     border-radius: 10px;
 }
 
 .caixa {
-    background-image: linear-gradient(to right, #000, #111, #111, #000);
+    background-image: linear-gradient(to right, #000, #222, #222, #000);
     width: 250px;
     padding: 4px;
     text-align: center;
     font-size: 25px;
     border-radius: 20px;
-    font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-style: normal;
-    color: #000;
-    margin-top: 10px;
-}
-
-.caixa a {
-    margin-top: 10px;
-    background-image: linear-gradient(to right, #000, #111, #111, #000);
-    color: rgb(255, 255, 255);
+    margin: 20px;
 }
 
 .caixa:hover {
@@ -312,22 +282,15 @@ header {
     color: #fff;
 }
 
-
 /*estilo curso*/
-
-.curso {
-    /* background-image: linear-gradient(to right, rgb(52, 1, 87), rgb(81, 0, 135), rgb(81, 0, 135), rgb(52, 1, 87)); */
-}
 
 .dsmimg {
     width: 400px;
     height: auto;
     float: right;
     shape-outside: circle();
-    margin-left: 200px;
-    background-color: #000;
+    margin-left: 50px;
     border-radius: 100%;
-    padding: 30px;
 }
 
 .dsmtxt {
@@ -340,11 +303,6 @@ header {
 
 
 /*estilo carreira*/
-
-.carreiras {
-    /* background-image: linear-gradient(to right, rgb(52, 1, 87), rgb(81, 0, 135), rgb(81, 0, 135), rgb(52, 1, 87)); */
-}
-
 .mercado {
     display: flex;
     justify-content: center;
@@ -353,14 +311,7 @@ header {
     text-align: justify;
 }
 
-
 /*estilo disciplinas*/
-
-.disciplinas {
-    /* background-image: linear-gradient(to right, #000, #111, #111, #000); */
-    height: 100%;
-}
-
 
 /* começo flip card */
 
@@ -428,7 +379,6 @@ header {
 .tras h2 {
     text-align: left;
 }
-
 
 /* fim flip card */
 
@@ -547,7 +497,9 @@ header {
     text-align: center;
 }
 
-.member-img {
+
+
+.member-img, .member-caio-img {
     width: 130px;
     height: 130px;
     border-radius: 50%;
@@ -558,7 +510,11 @@ header {
     transition: transform 0.3s;
 }
 
-.member-img:hover {
+.member-caio-img{
+    border: 4px solid #ff0000;
+}
+
+.member-img:hover, .member-caio-img:hover {
     transform: scale(1.05);
 }
 
