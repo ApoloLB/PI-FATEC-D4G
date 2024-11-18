@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -18,24 +19,17 @@ a {
 }
 
 /* tentativa de responsividade */
-@media (min-width: 1200px) {
-    .card_container {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-}
 
-@media (min-width: 768px) and (max-width: 1199px) {
-    .card_container {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-    }
-}
+/* Dispositivos pequenos */
+@media only screen and (min-width: 600px) {
 
-@media (max-width: 768px) {
+}
+/* Dispositivos médios */
+@media only screen and (min-width: 768px) {
     .nav li {
         font-size: 20px;
     }
+
     .home h1,
     .fatec h1,
     .curso h1,
@@ -44,64 +38,47 @@ a {
     .alunos h1 {
         font-size: 30px;
     }
+
     .card_container {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
+
     .card {
         width: 250px;
         height: 300px;
     }
+
     .card img {
         height: 180px;
         width: 200px;
     }
+
     .card h2 {
         font-size: 20px;
     }
+
     .fatecimg img {
         width: 100%;
         max-width: 300px;
         float: left;
     }
+
     .fatecimg {
         margin: auto;
         text-align: center;
     }
+
     .fatecimg img {
         margin-bottom: 20px;
     }
-}
 
-@media (max-width: 480px) {
-    .nav li {
-        font-size: 16px;
-    }
-    .home h1,
-    .fatec h1,
-    .curso h1,
-    .carreiras h1,
-    .disciplinas h1,
-    .alunos h1 {
-        font-size: 20px;
-    }
-    .card {
-        width: 90%;
-        height: 300px;
-    }
-    .card img {
-        height: 150px;
-        width: 100%;
-    }
-    .card h2 {
-        font-size: 16px;
-    }
-    .fatecimg img {
-        width: 100%;
-        max-width: 200px;
-    }
 }
-
+/* Dispositivos grandes */
+@media only screen and (min-width: 1200px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
 
 /*ESTILO NAV SITE*/
 
@@ -120,7 +97,7 @@ header {
     display: flex;
     justify-content: space-between;
     overflow: hidden;
-    
+
 }
 
 .nav li {
@@ -302,12 +279,16 @@ header {
 
 
 /*estilo carreira*/
-.mercado {
-    display: flex;
-    justify-content: center;
+.mercadotxt {
     color: white;
     font-size: 25px;
     text-align: justify;
+}
+
+.mercadoimg {
+    width: 80%;
+    height: auto;
+    margin: 20px 0 0 10% ;
 }
 
 /*estilo disciplinas*/
@@ -350,6 +331,7 @@ header {
 
 .frente,
 .tras {
+    background: url(/img/tilojo.png);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -359,11 +341,18 @@ header {
 }
 
 .frente {
-    background: linear-gradient(to bottom right, #000, #1e0064);
+    display: inline-block;
+    margin-top: 50;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.fa-solid {
+    padding-top: 30px;
 }
 
 .tras {
-    background: linear-gradient(to bottom right, #000, #1e0064);
     transform: rotateY(180deg);
     text-align: left;
 }
@@ -380,7 +369,6 @@ header {
 }
 
 /* fim flip card */
-
 
 /*estilo alunos*/
 
@@ -498,7 +486,8 @@ header {
 
 
 
-.member-img, .member-caio-img {
+.member-img,
+.member-caio-img {
     width: 130px;
     height: 130px;
     border-radius: 50%;
@@ -509,11 +498,12 @@ header {
     transition: transform 0.3s;
 }
 
-.member-caio-img{
+.member-caio-img {
     border: 4px solid #ff0000;
 }
 
-.member-img:hover, .member-caio-img:hover {
+.member-img:hover,
+.member-caio-img:hover {
     transform: scale(1.05);
 }
 
@@ -555,7 +545,6 @@ header {
     }
 }
 
-
 /* Estilos Footer */
 
 .footer {
@@ -575,14 +564,19 @@ header {
 .logos {
     display: flex;
     justify-content: center;
-    gap: 150px;
+    align-items: center;
+    gap: 100px;
     margin-bottom: 20px;
 }
 
 .footer-logo {
-    width: auto;
-    height: 120px;
+    width: 200px;
+    height: auto;
     transition: transform 0.3s;
+}
+
+#dsmlogofoot{
+    width: 150px;
 }
 
 .footer-copy {
