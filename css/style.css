@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -18,17 +17,21 @@ a {
     color: #fff;
 }
 
+
 /* tentativa de responsividade */
 
+
 /* Dispositivos pequenos */
+
 @media only screen and (min-width: 600px) {}
 
+
 /* Dispositivos médios */
+
 @media only screen and (min-width: 768px) {
     .nav li {
         font-size: 20px;
     }
-
     .home h1,
     .fatec h1,
     .curso h1,
@@ -37,50 +40,45 @@ a {
     .alunos h1 {
         font-size: 30px;
     }
-
     .card_container {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
-
     .card {
         width: 250px;
         height: 300px;
     }
-
     .card img {
         height: 180px;
         width: 200px;
     }
-
     .card h2 {
         font-size: 20px;
     }
-
     .fatecimg img {
         width: 100%;
         max-width: 300px;
         float: left;
     }
-
     .fatecimg {
         margin: auto;
         text-align: center;
     }
-
     .fatecimg img {
         margin-bottom: 20px;
     }
-
 }
 
+
 /* Dispositivos grandes */
+
 @media only screen and (min-width: 1200px) {
     .card_container {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(6, 1fr);
     }
 }
+
 
 /*ESTILO NAV SITE*/
 
@@ -99,7 +97,6 @@ header {
     display: flex;
     justify-content: space-between;
     overflow: hidden;
-
 }
 
 .nav li {
@@ -107,7 +104,6 @@ header {
     font-size: 25px;
     padding: 15px;
     padding-top: 15px;
-
 }
 
 .nav li a {
@@ -220,6 +216,7 @@ header {
     color: #fff;
 }
 
+
 /*estilo home*/
 
 
@@ -260,6 +257,7 @@ header {
     color: #fff;
 }
 
+
 /*estilo curso*/
 
 .dsmimg {
@@ -281,6 +279,7 @@ header {
 
 
 /*estilo carreira*/
+
 .mercadotxt {
     color: white;
     font-size: 25px;
@@ -293,7 +292,9 @@ header {
     margin: 20px 0 0 10%;
 }
 
+
 /*estilo disciplinas*/
+
 
 /* começo flip card */
 
@@ -355,7 +356,6 @@ header {
 
 .tras {
     transform: rotateY(180deg);
-
 }
 
 .card h2 {
@@ -370,7 +370,9 @@ header {
     font-weight: 300;
 }
 
+
 /* fim flip card */
+
 
 /*estilo alunos*/
 
@@ -394,8 +396,9 @@ header {
     border: 6px solid #fff;
     border-radius: 18px;
     width: 400px;
-    height: 300px;
+    height: 380px;
     flex-direction: column;
+    align-items: center;
 }
 
 .feedback textarea {
@@ -532,16 +535,15 @@ header {
         flex-direction: column;
         align-items: center;
     }
-
     .member {
         margin-bottom: 30px;
     }
-
     .logos {
         flex-direction: column;
         align-items: center;
     }
 }
+
 
 /* Estilos Footer */
 
