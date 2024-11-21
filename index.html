@@ -215,11 +215,11 @@
         <!-------------section alunos----------------->
         <section class="alunos" id="alunos">
 
-            <h1>Feedback</h1>
-
+            
             <div class="menuFeedback">
-
+                
                 <div class="feedback">
+                    <h2>Feedback</h2>
 
                     <ul class="avaliacao">
 
@@ -232,7 +232,7 @@
                     </ul>
 
                     <div class="texto">
-                        <textarea name="" id="" cols="30"></textarea>
+                        <textarea name="" id="" maxlength="165" cols="30" placeholder="Deixe seu feedback aqui"></textarea>
                     </div>
 
                     <div class="caixa">
@@ -366,7 +366,7 @@
 
         function mostrarAlerta(event) {
             event.preventDefault(); // Evita o envio do formulário para mostrar o alerta primeiro
-            alert("Gratidão pelo feedback!");
+            alert("Grato pelo feedback!");
             location.reload();
         }
     </script>
