@@ -33,6 +33,7 @@ a {
     .nav li {
         font-size: 20px;
     }
+
     .home h1,
     .fatec h1,
     .curso h1,
@@ -41,30 +42,37 @@ a {
     .alunos h1 {
         font-size: 30px;
     }
+
     .card_container {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
+
     .card {
         width: 250px;
         height: 300px;
     }
+
     .card img {
         height: 180px;
         width: 200px;
     }
+
     .card h2 {
         font-size: 20px;
     }
+
     .fatecimg img {
         width: 100%;
         max-width: 300px;
         float: left;
     }
+
     .fatecimg {
         margin: auto;
         text-align: center;
     }
+
     .fatecimg img {
         margin-bottom: 20px;
     }
@@ -394,20 +402,19 @@ header {
 
 .feedback {
     display: flex;
-    /* border: 6px solid #fff; */
-    border-radius: 18px;
-    width: 600px;
+    border-radius: 10px;
+    width: 500px;
     height: 500px;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background:  url(/img/tilojo.png);
+    background: url(/img/tolojofeed.png);
     color: #fff;
     font-size: 30px;
-    padding: 20px;
 }
 
 .feedback textarea {
-    margin: 10px;
+    margin-bottom: 10px;
     height: 150px;
     width: 400px;
     border-radius: 10px;
@@ -418,6 +425,32 @@ header {
     background-color: #222;
     color: #fff;
 }
+
+.caixafeed {
+    background: #000;
+    width: 200px;
+    height: 60px;
+    font-size: 25px;
+    border-radius: 10px;
+    font-weight: 600;
+    padding: 0;
+}
+.caixafeed a{
+    display: block;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 4px;
+}
+
+.caixafeed:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    color: #fff;
+}
+
 
 .avaliacao {
     display: flex;
