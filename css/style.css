@@ -62,13 +62,11 @@ a {
         float: left;
     }
     .fatecimg {
-        margin: auto;
+        margin-right: 50px;
+        margin-bottom: 30px;
         text-align: center;
     }
-    .fatecimg img {
-        margin-bottom: 20px;
-    }
-}
+  
 
 
 /* Dispositivos grandes */
